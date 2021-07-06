@@ -1,0 +1,17 @@
+html{
+    scroll-behavior:smooth;
+}
+
+#bg{
+    background-image: url(../Images/FORM.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#ui{
+    background:rgb(63, 61, 61,0.9);
+    padding:30px;
+}

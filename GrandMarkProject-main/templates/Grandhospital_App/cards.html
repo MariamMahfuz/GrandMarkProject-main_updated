@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset- "UTF-8">
+  <meta name="viewport" content="width=device-width, initial">
+  <title>Hospital Managment System
+  </title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+  <!--bootstrap css============================================-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!----font awesome link=================================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+
+
+<body>
+  <div class="container">
+
+
+    <!---header starts==================================================-->
+    <header>
+      <section id="bg">
+        <nav class="navbar navbar-expand-md ">
+          <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+              <i class="logo fas fa-hospital fa-3x"></i>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span><i class="fas fa-bars navbar-icon"></i></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Doctors</a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Departments <span
+                      class="caret"></span></a>
+                  <ul class="dropdown-menu bg-danger">
+                    <li><a class="menu-list1" href="#">Surgery Department</a></li>
+                    <li><a class="menu-list2" href="#">Cardiac Department</a></li>
+                    <li><a class="menu-list1" href="#">Gynaecology Department</a></li>
+                    <li><a class="menu-list2" href="#">Medicine Department</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </nav>
+
+
+    </header>
+    <!--header ends=====================================================-->
+
+    <!--card section starts============================================-->
+
+
+    <section id="doctors">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Meet Our Doctors</h2>
+
+            <blockquote class="blockquote">
+
+              <form class="form-group">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <label for="name">Search For A Condition Or Doctor Name</label>
+                    <input type='text' class="form-control" name="name" required>
+                  </div>
+
+                  <div class="col-lg-2">
+                    <h3 class="font-weight-bolder text-center mt-4">Or</h3>
+                  </div>
+                  <div class="col-lg-5">
+                    <label for="address">Search By Address, City And State, Or ZIP Code
+                    </label>
+                    <input type='text' class="form-control" name="address" required>
+                  </div>
+                </div>
+              </form>
+
+            </blockquote>
+
+
+            <div class="card-deck">
+              <div class="card">
+                <img src="Images/dc1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Dr.Mike
+                  </h5>
+                  <p class="card-text"> Speciality: Gynae and Obstetrics<br> Degree: DGO , FCPS (Gynae and Obs)<br>
+                    Visiting Day: Saturday - Friday<br> Visiting Hour: 5 PM <br> Room No: 422 <br>For Appointment:
+                    031******<br></p>
+
+                  <button class="buy-now-button">Appointment </button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/dc1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr.Nick</h5>
+                  <p class="card-text"> Speciality: Gynae and Obstetrics<br> Degree: DGO , FCPS (Gynae and Obs)<br>
+                    Visiting Day: Saturday - Friday<br> Visiting Hour: 5 PM <br> Room No: 422 <br>For Appointment:
+                    031******<br></p>
+
+                  <button class="buy-now-button">Appointment </button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/dc1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr.Alfred</h5>
+                  <p class="card-text"> Speciality: Gynae and Obstetrics<br> Degree: DGO , FCPS (Gynae and Obs)<br>
+                    Visiting Day: Saturday - Friday<br> Visiting Hour: 5 PM <br> Room No: 422 <br>For Appointment:
+                    031******<br></p>
+
+                  <button class="buy-now-button">Appointment</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <br>
+
+
+
+    <!--card section ends============================================-->
+
+    <!--footer section starts=========================================-->
+    <footer style="background-color:#02033a  ;
+  color:cornsilk">
+
+
+      <center>
+        <div class="row ">
+
+          <div class="col-md-12 ">
+            <p>
+              &copy;All rights preserved by <b>Mariam Binte Mahfuz</b>
+            </p>
+          </div>
+        </div>
+      </center>
+
+
+
+
+    </footer>
+    <!--footer section ends=========================================-->
+
+
+
+    <!--BOOTSTRAP POP UP JS JQERY LINK========================-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

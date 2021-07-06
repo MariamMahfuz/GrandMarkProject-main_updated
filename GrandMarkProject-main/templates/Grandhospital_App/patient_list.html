@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title_block %} Patients' List {% endblock %}
+{% block body_block %}
+
+    <div class="mt-5 container">
+        <div class="text-center text-white heading main-plst">
+            <h1>Patients' List</h1>
+        </div>
+
+        <div class="table mt-5">
+            {% if patient_db %}
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Blood Group</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Problem</th>
+                        <th scope="col">City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for db in patient_db %}
+                        <tr class="table-light">
+                            <th scope="row">{{db.first_name}} {{db.last_name}}</th>
+                            <td>{{db.blood_group}}</td>
+                            <td>{{db.gender}}</td>
+                            <td>{{db.phone}}</td>
+                            <td>{{db.problem}}</td>
+                            <td>{{db.city}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            {% else %}
+
+            <div class="msg">
+                <h1> No Appointments to show </h1>
+            </div>
+
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,451 @@
+html{
+    scroll-behavior:smooth;
+}
+
+h1,h2,h3,h4,h5,h6{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+
+
+}
+/*header starts=======================================================*/
+
+#bg{
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*navigation menu starts=============================*/
+.navbar{
+    padding:1% 10%;
+    background:rgba(99, 1, 1, 0.3)
+}
+.navbar-icon{
+    color:rgb(80, 2, 2);
+}
+.banner-container{
+    height:100vh;
+}
+.logo{
+    color:rgb(59, 1, 1);
+    height: 35px;
+    width: 35px;
+}
+
+
+.nav-link{
+    color:rgb(44, 1, 1);
+    border-radius:5px;
+    transition: 0.4s;
+}
+
+.nav-link:hover{
+    background:rgb(202, 51, 51);
+    color:white;
+    transform:scale(1.2);
+}
+.dropdown-menu{
+    background-color: rgb(82, 1, 1);
+}
+.menu-list1{
+    display: block;
+    background-color: rgb(223, 51, 51);
+    padding-left: 5px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+    text-transform: Uppercase;
+    font-size: 0.7rem;
+    transition: .4s;
+
+}
+
+.menu-list1:hover{
+    border-radius: 6px;
+    background-color: rgba(209, 120, 120, 0.815);
+
+}
+
+.menu-list2{
+    display: block;
+    background-color: rgb(82, 1, 1);
+    padding-left: 5px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+    text-transform: Uppercase;
+    font-size: 0.7rem;
+    transition: .4s;
+
+}
+
+.menu-list2:hover{
+    border-radius: 6px;
+    background-color: rgba(231, 171, 171, 0.815);
+
+}
+
+/*navigation menu ends=========*/
+
+
+/*banner starts======================================================*/
+
+.banner-container h1{
+    font-size: 3.5rem;
+    background:rgba(14, 1, 1, 0.3);
+    font-family:monospace;
+    padding:20px;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.slogan{
+        font-size: 1.6rem;
+        background:rgba(11, 175, 175,0.6);
+        color: rgb(107, 20, 42);
+        font-weight: bolder;
+        font-family:'Times New Roman', Times, serif;
+        width:380px;
+        height:auto;
+        text-transform:capitalize;
+        border-radius: 6px;
+}
+
+
+.btn:hover{
+    transform:scale(1.1);
+
+}
+
+     
+/*banner ends========================================================*/
+
+/*header ends=======================================================*/
+
+
+/*about section starts==============================================*/
+
+img{
+    padding:50px 20px;
+     margin-top: 5px;
+     border-radius: 50%;
+     border:2px solid rgb(8, 8, 27);     
+ }
+
+.about-us-contents{
+    padding:40px 10px;
+}
+h2{
+    color: rgb(156, 25, 51);
+    font-family: monospace;
+    font-size: 5rem;
+    
+}
+.hr-style{
+    border:5px dotted rgb(139, 10, 32);
+    border-bottom:none;
+    width:65px;
+}
+.about-us-paragraph{
+    color:rgb(99, 89, 89);
+    font-size:0.9rem;
+}
+
+
+/*about section ends==============================================*/
+
+/*thought section starts==========================================*/
+#contacts{
+    padding:5%;
+    background-color:rgb(3, 3, 95);
+}
+
+.cd{
+    margin-bottom: 220px;
+}
+
+.cd h6{
+    color: #ffffff;
+}
+
+.section-title hr{
+    border:5px dotted rgb(245, 240, 241);
+    border-bottom:none;
+    width:160px;
+}
+
+#contacts h4 {
+    color: #ffffff;
+}
+
+.cp{
+    color: #ffffff;
+}
+
+
+.cm{
+    margin-bottom: 120px;
+}
+
+.social-icon{
+    color: #ffffff;
+}
+
+.cp i,h5,p{
+    color: #ffffff;
+}
+
+.ad{
+    color: #ffffff;
+}
+
+
+/*thought section ends============================================*/
+
+
+
+
+
+/*card section starts============================================*/
+
+.buy-now-button{
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 25px;
+    cursor: pointer;
+}
+.cat1, .cat2, .cat3{
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.cat1{
+    background-color: orange;
+}
+.cat2{
+    background-color: orchid;
+}
+.cat3{
+    background-color: blue;
+}
+.categories h1{
+    color: white;
+}
+.categories img{
+    width: 100px;
+}
+.patient {
+    display: block;
+}
+.card{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(65, 63, 63);
+    transition:0.4s;
+    margin:10px;
+    
+}
+.covid-logo{
+    padding: 10px 0px;
+}
+
+.professionals-logo{
+    padding: 10px 0px;
+}
+.card:hover{
+    transform:scale(1.1);
+
+}
+.card-footer{
+    background-color: rgb(235, 235, 235);
+    border-top: none;
+}
+
+#doctors h2{
+    text-align:center;
+    font-weight:bold;
+
+    padding:10px;
+}
+
+/*card section ends=============================*/
+
+/*admin page starts here========================*/
+#ui{
+    background:rgba(212, 210, 210, 0.9);
+    padding:30px;
+}
+/*admin page ends here==========================*/
+
+/*cardiac page starts here=======================*/
+
+#cardiac{
+    background-image: url(../img/cardiology.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/*cardiac page ends here=======================*/
+
+
+/*surgery page starts here=======================*/
+
+#surgery{
+    background-image: url(../img/surgery.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/*surgery page ends here=======================*/
+
+/*gynaecology page starts here=======================*/
+
+#gynecology{
+    background-image: url(../img/gynecology.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*gynaecology page ends here=======================*/
+
+
+
+/*medicine page starts here=======================*/
+
+#medicine{
+    background-image: url(../img/medicine.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*medicine page ends here=======================*/
+.sign_up {
+    width: 550px;
+    border: 1px solid #ccc;
+    padding: 40px;
+  }
+
+  .log_in {
+    width: 550px;
+    padding: 25px;
+    border: 1px solid #ccc;
+  }
+
+  .sign_up {
+    width: 550px;
+    border: 1px solid #ccc;
+    padding: 25px;
+  }
+
+  .log_in {
+    width: 550px;
+    padding: 40px;
+    border: 1px solid #ccc;
+  }
+
+  .card {
+    height: 370px;
+  }
+
+  .card-product:after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden;
+  }
+
+  .card-product .price-new,
+  .card-product .price {
+    margin-right: 5px;
+  }
+
+  .card-product .price-old {
+    color: #999;
+  }
+
+  .card-product .img-wrap {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    text-align: center;
+  }
+
+  .card-product .img-wrap img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid #eee;
+  }
+
+  .card-product .action-wrap {
+    padding-top: 4px;
+    margin-top: 4px;
+  }
+
+  .card-product .bottom-wrap {
+    padding: 15px;
+    border-top: 1px solid #eee;
+  }
+
+  .card-product .title {
+    margin-top: 0px;
+  }
+  .btn a{
+    color: #eee;
+    text-decoration: none;
+  }
+  h3{
+    text-align: center;
+    font-weight: bold;
+  }
+
+.hd{
+    color: salmon;
+}
+
+/* ============ Patients' List page starts =============== */
+
+.main-plst {
+    background: rgba(201, 201, 201, 0.809);
+    height: 100%;
+}
+
+.main-plst h1 {
+    font-weight: bold;
+}
+
+.msg {
+    background: rgba(118, 72, 72, 0.809);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* ============ Patients' List page ends =============== */

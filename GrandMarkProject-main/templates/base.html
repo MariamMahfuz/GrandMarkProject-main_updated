@@ -1,0 +1,153 @@
+{% load  staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial">
+    <title>{% block title_block %} GrandMark Hospital {% endblock %}
+
+    </title>
+
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/card.css' %}">
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!--bootstrap css============================================-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!----font awesome link=================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+
+<body>
+<div class="container">
+
+
+    <!---header starts==================================================-->
+    <header>
+        <section id="bg">
+           <!-- navbar start  -->
+                     <nav class="navbar navbar-expand-md ">
+          <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+              <i class="logo fas fa-hospital fa-3x"></i>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span><i class="fas fa-bars navbar-icon"></i></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'Grandhospital_App:index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'Grandhospital_App:patientList' %}">Patients' List</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Doctors</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Departments <span
+                      class="caret"></span></a>
+                  <ul class="dropdown-menu bg-danger">
+                    <li><a class="menu-list1" href="">Surgery Department</a></li>
+                    <li><a class="menu-list2" href="{% url 'Grandhospital_App:cardiology' %}">Cardiac Department</a></li>
+                    <li><a class="menu-list1" href="{% url 'Grandhospital_App:gynecology' %}">Gynaecology Department</a></li>
+                    <li><a class="menu-list2" href="{% url 'Grandhospital_App:medicine' %}">Medicine Department</a></li>
+                    <li><a class="menu-list2" href="{% url 'Grandhospital_App:surgery' %}">Surgery Department</a></li>
+                  </ul>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                {% if user.is_authenticated %}
+      <li class="nav-item dropdown">
+
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" >
+              @{{user.username}}
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+          <a class="dropdown-item" href="{% url 'App_Login:profile' %}">Your Profile</a>
+          <a class="dropdown-item" href="{% url 'App_Login:logout' %}">Logout</a>
+
+
+
+          <div class="dropdown-divider"></div>
+
+        </div>
+      </li>
+
+      {% else %}
+     <li class="nav-item">
+        <a class="nav-link" href="{% url 'App_Login:signup' %}">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'App_Login:login' %}">Login</a>
+      </li>
+      {% endif %}
+      <!-- ========== -->
+
+
+
+
+              </ul>
+            </div>
+          </div>
+
+        </nav>
+    <!-- Navbar end -->
+
+
+            {% block body_block %}
+
+            {% endblock %}
+
+
+            <footer style="background-color:#02033a;color:cornsilk">
+
+                <center>
+                    <div class="row ">
+
+                        <div class="col-md-12 ">
+                            <p>
+                                &copy;All rights preserved by <b>Mariam Binte Mahfuz(C193223)</b>
+                            </p>
+                        </div>
+                    </div>
+                </center>
+
+
+            </footer>
+            <!--footer section ends=========================================-->
+
+</div>
+<!--BOOTSTRAP POP UP JS JQERY LINK========================-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

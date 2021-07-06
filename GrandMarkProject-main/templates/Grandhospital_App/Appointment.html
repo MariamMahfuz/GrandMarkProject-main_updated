@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load  staticfiles %}
+{% block title_block %} Home {% endblock %}
+{% block body_block %}
+
+  <section id="bg">
+
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3"></div>
+
+        <div class="col-lg-6 text-weight-bolder text-white">
+          <div id="ui">
+
+            <div class="title text-center p-3 text-white ">
+              <h1 class="font-weight-bolder">Appointment Form</h1>
+            </div>
+
+            {% comment %} <form action="" method="POST">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <input type="submit" class="btn btn-primary btn-outline-secondary text-white" value="Submit">
+              <input class="btn btn-primary  btn-outline-secondary text-white" type="reset" value="Reset">
+              <a class="btn btn-primary text-white btn-outline-secondary" href="{% url 'Grandhospital_App:index' %}" role="button">Click here
+              to Go Home</a>
+            </form> {% endcomment %}
+
+            <form class="form-group" method="POST">
+            {% csrf_token %}
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="fullname">First name</label>
+                  {{form.first_name}}
+                </div>
+
+                <div class="col-lg-6">
+                  <label for="fullname">Last Name</label>
+                  {{form.last_name}}
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                {{form.user_mail}}
+              </div>
+
+              <div class="form-group ">
+                <label for="dob">Date of Birth</label>
+                {{form.dob}}
+              </div>
+
+              <div class="form-group">
+                {{form.gender}}
+              </div>
+
+
+              <div class="form-group">
+                {{form.blood_group}}
+              </div>
+
+
+              <div class="form-group">
+                <label for="phone">Enter Your Phone Number</label>
+                  {{form.phone}}
+              </div>
+
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                {{form.address_1}}
+              </div>
+
+              <div class="form-group">
+                <label for="inputAddress2">Problem</label>
+                {{form.problem}}
+              </div>
+
+              <div class="form-row">
+
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  {{form.city}}
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">State</label>
+                  {{form.state}}
+                </div>
+
+
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  {{form.zipcode}}
+                </div>
+              </div>
+
+
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Attach Your Photo</label>
+                {{form.avatar}}
+              </div>
+
+              <input type="submit" value="Submit" class="btn btn-primary btn-outline-secondary text-white">
+              <input class="btn btn-primary  btn-outline-secondary text-white" type="reset" value="Reset">
+              <a class="btn btn-primary text-white btn-outline-secondary" href="index.html" role="button">Click here
+                to Go Home</a>
+
+            </form>
+
+            </div>
+            <div class="col-lg-3"></div>
+
+
+
+
+          </div>
+        </div>
+
+
+
+
+  </section>
+
+
+
+{% endblock %}
+
